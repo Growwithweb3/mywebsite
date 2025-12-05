@@ -1,0 +1,298 @@
+/*  Global Styles & Reset  */
+
+:root {
+    --primary-color: #000000;
+    --secondary-color: #fdca97;
+    --accent-color: #e4dadf;
+    --bg-dark: #0f0f23;
+    --bg-card: #1a1a2e;
+    --text-primary: #ffffff;
+    --text-secondary: #a0a0b0;
+    --gradient-1: linear-gradient(135deg, #300bd4 0%, #764ba2 100%);
+    --gradient-2: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-3: linear-gradient(135deg, #0918eb 0%, #00f2fe 100%);
+    --gradient-4: linear-gradient(135deg, #f40505 0%, #764ba2 100%);
+}
+
+
+/* -----------------------------      Courses Section ------------------------------ */
+   
+.courses-section {
+    margin-bottom: 80px;
+    padding: 40px 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.courses-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.course-card {
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    transition: all 0.3s ease;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.course-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 5px;
+    background: var(--gradient-2);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.course-card:hover::before {
+    transform: scaleX(1);
+}
+
+.course-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--primary-color);
+    box-shadow: 0 15px 40px rgba(99, 102, 241, 0.3);
+}
+
+.course-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--gradient-1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.course-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--text-primary);
+}
+
+.course-description {
+    color: var(--text-secondary);
+    margin-bottom: 25px;
+    font-size: 1rem;
+}
+
+.course-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 30px;
+    background: var(--gradient-1);
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.course-link:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 20px rgba(99, 102, 241, 0.5);
+}
+
+.course-link i {
+    transition: transform 0.3s ease;
+}
+
+.course-link:hover i {
+    transform: translateX(5px);
+}
+
+/* -----------------------------      Stories Section ------------------------------ */
+
+.premium-course {
+    margin-bottom: 80px;
+    animation: fadeInUp 1s ease-out 1.1s both;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.premium-container {
+    display: inline-flex;
+    justify-content: center;
+    width: auto;
+}
+
+.premium-course {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-bottom: 80px;
+    padding: 40px 50px;
+    max-width: 100%;
+    box-sizing: border-box;
+    background: transparent;
+}
+
+/* -----------------------------      Override for section title ------------------------------ */
+.premium-course .section-title {
+    grid-column: 1 / -1;
+    margin-bottom: 28px;
+}
+
+/* -----------------------------     premium description ------------------------------ */
+.premium-description {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--text-secondary);
+    max-width: 1500px;
+    margin: 0 auto 20px;
+    padding: 20px 30px;
+    line-height: 1.5;
+    font-weight: 500;
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    display: block;
+    text-decoration: none;
+}
+
+.story-card {
+    background: rgba(26, 26, 46, 0.6);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 40px 30px;
+    text-align: center;
+    width: 100%;
+    border: 2px dashed rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.story-card:hover {
+    transform: translateY(-10px);
+    border-color: var(--accent-color);
+    box-shadow: 0 15px 40px rgba(236, 72, 153, 0.3);
+}
+
+.story-card.coming-soon {
+    opacity: 0.8;
+}
+
+.story-icon {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 20px;
+    background: var(--gradient-2);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.story-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.story-card p {
+    color: var(--text-secondary);
+    font-size: 1rem;
+}
+
+/* -----------------------------      Section Title Styling ------------------------------ */
+.section-title {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 60px;
+    background: rgb(0, 255, 238);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: bold;
+}
+
+    /* -----------------------------      Responsive Design ------------------------------ */
+@media (max-width: 1200px) {
+    .courses-grid,
+    .premium-course {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 1024px) {
+    .courses-grid,
+    .premium-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+
+    .course-card,
+    .story-card {
+        padding: 30px 20px;
+    }
+
+    .courses-section,
+    .premium-course {
+        padding: 30px 30px;
+    }
+
+    .courses-grid,
+    .premium-course {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    .section-title {
+        font-size: 1.8rem;
+    }
+
+    .courses-grid,
+    .premium-course {
+        grid-template-columns: 1fr;
+    }
+
+    .course-title,
+    .story-card h3 {
+        font-size: 1.3rem;
+    }
+
+    .premium-description {
+        font-size: 1rem;
+        padding: 15px 20px;
+    }
+
+    .courses-section,
+    .premium-course {
+        padding: 20px 15px;
+    }
+}
