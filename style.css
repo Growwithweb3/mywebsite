@@ -6,19 +6,38 @@ html {
 body {
     height: 100vh; 
     margin: 0;
+    padding: 0;
     background: linear-gradient(90deg, #1b1c1b, #1d1660);
+    background-size: cover;
+    background-attachment: fixed;
     color: #ffffff; 
     font-family: Arial, sans-serif;
     overflow-x: hidden;
     position: relative;
+    width: 100%;
+    min-width: 100%;
 }
 
 
 /*  _________________________________________________header section_______________________________________________ */
 
+.top-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
 #one {
     position: relative;
     left: 2cm;
+    padding-left: 0;
     font-size: 50px;
     line-height: 1.5;
     color: #ffffff; 
@@ -27,6 +46,8 @@ body {
     text-shadow: 0 0 0.5px #ffffff, 0 0 1px #ffffff;
     -webkit-text-fill-color: #ffffff;
     animation: subtleGlow 2s ease-in-out infinite alternate;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 @keyframes subtleGlow {
@@ -43,12 +64,15 @@ body {
     font-style: italic;
     font-weight: bold;
     right: 0.5cm;
+    padding-right: 0;
     font-size: 20px;
     line-height: 0.6;
     text-align: right;
     color: #ffffff;        
     opacity: 0;            
     animation: fadeInLoop 5s ease-in-out infinite alternate;
+    margin: 0;
+    word-wrap: break-word;
 }
 
 @keyframes fadeInLoop {
@@ -289,5 +313,81 @@ main {
 }
 
 /* -----------------------------      End of Book Opening & Page Turn Animations ------------------------------ */
+
+/* ============================================
+   Mobile Responsiveness - Header Section
+   ============================================ */
+
+@media (max-width: 768px) {
+    .top-section {
+        padding: 15px;
+    }
+
+    #one {
+        font-size: 32px;
+        padding-left: 15px;
+        line-height: 1.3;
+        left: 0;
+    }
+
+    #three {
+        font-size: 16px;
+        padding-right: 15px;
+        line-height: 1.3;
+        right: 0;
+        margin-top: 8px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-section {
+        padding: 12px;
+    }
+
+    #one {
+        font-size: 28px;
+        padding-left: 12px;
+        line-height: 1.2;
+        left: 0;
+    }
+
+    #three {
+        font-size: 14px;
+        padding-right: 12px;
+        line-height: 1.2;
+        right: 0;
+        margin-top: 6px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 10px;
+    }
+
+    #one {
+        font-size: 24px;
+        padding-left: 10px;
+        line-height: 1.2;
+    }
+
+    #three {
+        font-size: 12px;
+        padding-right: 10px;
+        line-height: 1.2;
+    }
+}
+
+@media (max-width: 360px) {
+    #one {
+        font-size: 20px;
+        padding-left: 8px;
+    }
+
+    #three {
+        font-size: 11px;
+        padding-right: 8px;
+    }
+}
 
 
