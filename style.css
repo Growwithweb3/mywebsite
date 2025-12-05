@@ -1,4 +1,4 @@
-/* ADDED: Smooth scrolling for anchor links */
+
 html {
     scroll-behavior: smooth;
 }
@@ -23,7 +23,7 @@ body {
 
 .top-section {
     width: 100%;
-    padding: 20px;
+    padding: 50px;
     box-sizing: border-box;
     overflow: hidden;
 }
@@ -136,7 +136,7 @@ main {
     background: linear-gradient(135deg, #1f1f1f, #3533cd);  
     border: 2px solid #00ffff;      
     border-radius: 15px;            
-    padding: 30px;
+    padding: 25px;
     width: 300px;
     color: #ffffff;                 
     box-shadow: 0 0 20px rgba(0, 255, 255, 0.2); 
@@ -172,8 +172,8 @@ main {
     text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; 
 }
 
-.main{
-margin-bottom: 50px;
+main {
+    margin-bottom: 50px;
 }
 
 /*  ___________________________________________________footer section___________________________________________________ */
@@ -349,8 +349,9 @@ margin-bottom: 50px;
     main {
         flex-direction: column;
         align-items: stretch;
-        padding: 30px 20px;
+        padding: 30px 20px; /* Proper padding to prevent border from touching edges */
         gap: 30px;
+        box-sizing: border-box;
     }
 
     .follower-content {
@@ -360,7 +361,21 @@ margin-bottom: 50px;
 
     .box {
         margin-left: 0;
+        margin-right: 0;
         width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 26px; /* 15% reduction from 30px */
+        border-radius: 13px; /* 15% reduction from 15px */
+    }
+
+    .box h2 {
+        font-size: 20px; /* 15% reduction from 24px */
+        margin-bottom: 17px; /* 15% reduction from 20px */
+    }
+
+    .box p {
+        font-size: 15px; /* 15% reduction from 18px */
     }
 
     /* Footer mobile responsiveness */
@@ -416,8 +431,9 @@ margin-bottom: 50px;
     main {
         flex-direction: column;
         align-items: stretch;
-        padding: 25px 15px;
+        padding: 25px 20px; /* Increased horizontal padding for better spacing */
         gap: 25px;
+        box-sizing: border-box;
     }
 
     .follower-content {
@@ -435,16 +451,21 @@ margin-bottom: 50px;
 
     .box {
         margin-left: 0;
+        margin-right: 0;
         width: 100%;
-        padding: 25px;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 21px; /* 15% reduction from 25px */
+        border-radius: 11px; /* 15% reduction from 13px */
     }
 
     .box h2 {
-        font-size: 22px;
+        font-size: 19px; /* 15% reduction from 22px */
+        margin-bottom: 17px; /* 15% reduction from 20px */
     }
 
     .box p {
-        font-size: 16px;
+        font-size: 14px; /* 15% reduction from 16px */
     }
 
     /* Footer mobile responsiveness */
@@ -497,8 +518,9 @@ margin-bottom: 50px;
     main {
         flex-direction: column;
         align-items: stretch;
-        padding: 20px 12px;
+        padding: 20px 15px; /* Increased horizontal padding for better spacing */
         gap: 20px;
+        box-sizing: border-box;
     }
 
     .follower-content {
@@ -516,16 +538,21 @@ margin-bottom: 50px;
 
     .box {
         margin-left: 0;
+        margin-right: 0;
         width: 100%;
-        padding: 20px;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 17px; /* 15% reduction from 20px */
+        border-radius: 10px; /* 15% reduction from 12px */
     }
 
     .box h2 {
-        font-size: 20px;
+        font-size: 17px; /* 15% reduction from 20px */
+        margin-bottom: 15px; /* 15% reduction from 17px */
     }
 
     .box p {
-        font-size: 15px;
+        font-size: 13px; /* 15% reduction from 15px */
     }
 
     /* Footer mobile responsiveness */
@@ -591,16 +618,21 @@ margin-bottom: 50px;
 
     .box {
         margin-left: 0;
+        margin-right: 0;
         width: 100%;
-        padding: 18px;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 15px; /* 15% reduction from 18px */
+        border-radius: 9px; /* 15% reduction from 10px */
     }
 
     .box h2 {
-        font-size: 18px;
+        font-size: 15px; /* 15% reduction from 18px */
+        margin-bottom: 13px; /* 15% reduction from 15px */
     }
 
     .box p {
-        font-size: 14px;
+        font-size: 12px; /* 15% reduction from 14px */
     }
 
     /* Footer mobile responsiveness */
