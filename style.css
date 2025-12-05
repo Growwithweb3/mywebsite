@@ -172,6 +172,10 @@ main {
     text-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff; 
 }
 
+.main{
+margin-bottom: 50px;
+}
+
 /*  ___________________________________________________footer section___________________________________________________ */
 
 .lastsection  {
@@ -362,6 +366,7 @@ main {
     /* Footer mobile responsiveness */
     .lastsection {
         padding: 20px 20px;
+        margin-top: 0 !important; /* Remove margin-top on mobile */
     }
 
     .lastsection .social-links {
@@ -445,6 +450,7 @@ main {
     /* Footer mobile responsiveness */
     .lastsection {
         padding: 20px 15px;
+        margin-top: 0 !important; /* Remove margin-top on mobile */
     }
 
     .lastsection .social-links {
@@ -525,6 +531,7 @@ main {
     /* Footer mobile responsiveness */
     .lastsection {
         padding: 18px 12px;
+        margin-top: 0 !important; /* Remove margin-top on mobile */
     }
 
     .lastsection .social-links {
@@ -599,6 +606,7 @@ main {
     /* Footer mobile responsiveness */
     .lastsection {
         padding: 15px 10px;
+        margin-top: 0 !important; /* Remove margin-top on mobile */
     }
 
     .lastsection .social-links {
