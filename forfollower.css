@@ -1,4 +1,6 @@
-/*  Global Styles & Reset  */
+/*  Global Styles & Reset
+CSS file is linked with for follower section of index.html - free and premium course
+*/
 
 :root {
     --primary-color: #000000;
@@ -128,7 +130,7 @@
     transform: translateX(5px);
 }
 
-/* -----------------------------      Stories Section ------------------------------ */
+/* -----------------------------      premium course Section ------------------------------ */
 
 .premium-course {
     margin-bottom: 80px;
@@ -169,6 +171,7 @@
     color: var(--text-secondary);
     max-width: 1500px;
     margin: 0 auto 20px;
+    margin-bottom: 10px;
     padding: 20px 30px;
     line-height: 1.5;
     font-weight: 500;
@@ -294,5 +297,80 @@
     .courses-section,
     .premium-course {
         padding: 20px 15px;
+    }
+}
+
+/* -----------------------------      Jobs Section ------------------------------ */
+
+.jobs-section {
+    padding: 40px 50px 80px;
+    background: transparent;
+    box-sizing: border-box;
+}
+
+.jobs-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.job-card {
+    background: rgba(35, 46, 26, 0.6);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    border-radius: 16px;
+    padding: 28px 24px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.job-card:hover {
+    transform: translateY(-6px);
+    border-color: var(--accent-color);
+    box-shadow: 0 12px 32px rgba(99, 102, 241, 0.28);
+}
+
+.job-title {
+    font-size: 1.3rem;
+    margin-bottom: 16px;
+    color: var(--text-primary);
+}
+
+.job-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: grid;
+    gap: 10px;
+}
+
+.job-list a {
+    color: var(--text-secondary);
+    text-decoration: none;
+    padding: 10px 12px;
+    display: block;
+    border-radius: 10px;
+    transition: all 0.25s ease;
+    background: rgba(255, 255, 255, 0.03);
+}
+
+.job-list a:hover {
+    color: var(--text-primary);
+    background: rgba(99, 102, 241, 0.12);
+    transform: translateX(4px);
+}
+
+@media (max-width: 1024px) {
+    .jobs-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .jobs-section {
+        padding: 30px 20px 60px;
+    }
+
+    .jobs-grid {
+        grid-template-columns: 1fr;
     }
 }

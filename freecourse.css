@@ -1,4 +1,7 @@
-/* ADDED: Smooth scrolling for anchor links */
+/* ADDED: Smooth scrolling for anchor links
+CSS file of basicofweb3.html, advanceofweb3.html and developerroadmap.html
+*/
+
 html {
     scroll-behavior: smooth;
 }
