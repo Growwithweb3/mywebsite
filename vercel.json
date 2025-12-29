@@ -1,4 +1,14 @@
 {
+  "rewrites": [
+    {
+      "source": "/Basic-of-web-3-part-1.pdf",
+      "destination": "/public/Basic-of-web-3-part-1.pdf"
+    },
+    {
+      "source": "/Basic-of-web-3-part-2.pdf",
+      "destination": "/public/Basic-of-web-3-part-2.pdf"
+    }
+  ],
   "headers": [
     {
       "source": "/(.*\\.pdf)",
