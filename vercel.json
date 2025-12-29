@@ -1,14 +1,7 @@
 {
-  "public": true,
-  "rewrites": [
-    {
-      "source": "/public/(.*)",
-      "destination": "/public/$1"
-    }
-  ],
   "headers": [
     {
-      "source": "/public/(.*\\.pdf)",
+      "source": "/(.*\\.pdf)",
       "headers": [
         {
           "key": "Content-Type",
