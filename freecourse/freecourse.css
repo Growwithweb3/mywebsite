@@ -403,8 +403,15 @@ main {
     margin-bottom: 15px;
 }
 
+.pdf-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
 .pdf-link {
     display: inline-flex;
+    flex: 1;
     align-items: center;
     gap: 8px;
     color: #ffffff;
@@ -439,6 +446,75 @@ main {
     border: none;
     border-radius: 8px;
     background: #ffffff;
+}
+
+/* ============================================
+   X Post Horizontal Banner
+   ============================================ */
+.x-post-banner {
+    margin-top: 40px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.06), rgba(0, 0, 0, 0.5));
+    border-top: 2px solid rgba(0, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(0, 255, 255, 0.4);
+    border-left: 2px solid rgba(0, 255, 255, 0.25);
+    border-right: 2px solid rgba(0, 255, 255, 0.25);
+    border-radius: 6px;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-shadow: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make the banner span the width of three PDF boxes in the grid on large screens */
+.pdf-list .x-post-banner {
+    grid-column: span 3;
+}
+
+.x-post-text {
+    text-align: center;
+}
+
+.x-post-text h3 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    color: #00ffff;
+}
+
+.x-post-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.x-post-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #00ffff;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.x-post-link i {
+    font-size: 18px;
+}
+
+.x-post-link:hover {
+    background: #00ffff;
+    color: #000000;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
 }
 
 .back-link {
