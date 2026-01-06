@@ -228,10 +228,10 @@ CSS file is linked with for follower section of index.html - free and premium co
 
 /* -----------------------------      Section Title Styling ------------------------------ */
 .section-title {
-    font-size: 2.5rem;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 60px;
-    background: rgb(0, 255, 238);
+    background: #00aeff;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;

@@ -126,7 +126,7 @@ main {
 
 .follower-content h2 {
     font-size: 25px;
-    color: cyan;
+    color: #00aeff;
     margin-top: 0;
     margin-bottom: 15px;
 }
@@ -167,7 +167,7 @@ main {
 
 .box {
     background: linear-gradient(135deg, #1f1f1f, #3533cd);  
-    border: 2px solid #00ffff;      
+    border: 2px solid #fbfbfb;      
     border-radius: 15px;            
     padding: 30px;
     width: 300px;
@@ -185,7 +185,7 @@ main {
     margin-top: 0;
     margin-bottom: 20px;
     font-size: 24px;
-    color: #00ffff; 
+    color: #00aeff; 
 }
 
 .box p {
