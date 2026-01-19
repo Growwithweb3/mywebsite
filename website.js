@@ -1,8 +1,6 @@
-// ============================================
 // Book Opening Animation - Only on Page Load (index.html only)
-// ============================================
-
 // Book Opening Animation on Page Load Only (skip for myexpertise.html)
+
 document.addEventListener('DOMContentLoaded', function() {
     // Skip book opening animation on myexpertise.html
     if (window.location.pathname.includes('myexpertise.html') || 
