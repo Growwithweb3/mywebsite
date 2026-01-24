@@ -92,17 +92,19 @@ margin-bottom: 10px;
     border-right:1px solid black;
 }
 
-.imgap1{
-    width: 400px;
-    height: 300px;
-    position:absolute;
-    right: 15%;
-    top:26%;
-}
 
 #paraonep1 {
     padding-right: 50%;
 }
+
+.imgap1{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top: 600px;
+    left: 1100px;
+}
+
 
 
 /* for basic of web 3 part 2 (P2) */
@@ -122,13 +124,6 @@ margin-bottom: 10px;
     padding-right:300px;
 }
 
-.imgap1{
-    width: 350px;
-    height: 250px;
-    position: absolute;
-    top:400px;
-    left: 1100px;
-}
 
 .imgbp2{
     width: 300px;
