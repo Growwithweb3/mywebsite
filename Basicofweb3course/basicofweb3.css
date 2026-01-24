@@ -55,6 +55,7 @@ body {
 .mainbody H1{
   background: linear-gradient(to bottom, red, rgb(141, 52, 52));
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 font-size:32px;
 font-weight:800;   
@@ -94,7 +95,7 @@ margin-bottom: 10px;
 
 
 #paraonep1 {
-    padding-right: 50%;
+    padding-right: 40%;
 }
 
 .imgap1{
@@ -124,6 +125,13 @@ margin-bottom: 10px;
     padding-right:300px;
 }
 
+.imgap2{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top:400px;
+    left: 1100px;
+}
 
 .imgbp2{
     width: 300px;
