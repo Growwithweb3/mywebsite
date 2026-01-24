@@ -1,0 +1,492 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0px;
+    padding: 0px;
+    background: rgb(234, 237, 255);
+    background-size: cover;
+    background-attachment: fixed; 
+    font-family: 'Times New Roman', Times, serif, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+}
+
+/*  Title part (global)  */
+
+.title{
+ background: black;
+}
+
+.title H1 {
+    padding-left: 100px;
+    padding-top: 50px;
+    font-size: 20px;
+    line-height: 2;
+    color: #ffffff;
+    font-weight: 900; 
+    padding-bottom: 50px;
+    margin-top: 0px;
+}
+
+.title p {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 2;
+    color: #fb0101;
+    position: absolute;
+    right:0;
+    top:0;
+    padding-right: 80px;
+}
+
+/* main content part global */
+
+.mainbody{
+    max-width: 1000px;
+    margin-top: 50px;
+    margin-left: 300px;
+    margin-right: 100px;
+}
+
+.mainbody H1{
+  background: linear-gradient(to bottom, red, rgb(141, 52, 52));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+font-size:32px;
+font-weight:800;   
+margin-bottom: 10px; 
+}
+
+.section{
+    margin-bottom: 20px;
+}
+
+.mainbody {
+ line-height: 1.5;
+ font-size: 20px;
+ font-weight: 540;
+ word-spacing: 3px;
+}
+
+.paraone, .paratwo, .parathree, .parafour {
+    padding: 20px 0 10px 15px;
+}
+
+.section li{
+    padding-bottom: 10px;
+}
+
+
+/* for basic of web 3 part 1 (P1) */
+
+.tocp1 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 30px;
+    line-height: 3;
+    padding-right: 50px;
+    border-right:1px solid black;
+}
+
+.imgap1{
+    width: 400px;
+    height: 300px;
+    position:absolute;
+    right: 15%;
+    top:26%;
+}
+
+#paraonep1 {
+    padding-right: 50%;
+}
+
+
+/* for basic of web 3 part 2 (P2) */
+
+.tocp2 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 25px;
+    line-height: 3;
+    padding-right: 50px;
+    border-right:1px solid black;
+}
+
+.paraonep2, .paratwop2, .parathreep2{
+    padding-bottom: 20px;
+    padding-left: 15px;
+    padding-right:300px;
+}
+
+.imgap1{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top:400px;
+    left: 1100px;
+}
+
+.imgbp2{
+    width: 300px;
+    height: 180px;
+    position: absolute;
+    top:850px;
+    left: 1100px;
+}
+
+.imgcp2{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    top:1100px;
+    left: 1050px;
+}
+
+.imgdp2{
+    width: 350px;
+    height: 250px;
+    position: absolute;
+    bottom:250px;
+    left: 1050px;
+}
+
+.imgep2{
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    bottom:0px;
+    left: 1050px;
+}
+
+
+
+/* for basic of web 3 part  3 (P3) */
+
+.tocp3 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 25px;
+    line-height: 3;
+    padding-right: 50px;
+    border-right:1px solid black;
+}
+
+h2 {
+   font-size: 23px; 
+}
+
+.wallet-list a {
+  margin-left: 6px;
+  color: blue;
+  text-decoration: underline;
+}
+
+.cryptowalletguide {
+    width: 230px;
+    position: relative;
+    left: 350px;
+    font-size: 23px; 
+    font-weight: 600;
+    margin-bottom: 50px;
+    border-bottom:1px solid black ;
+    padding-left: 8px;
+}
+
+.CEX {
+    width: 130px;
+    position: relative;
+    left: 350px;
+    font-size: 23px; 
+    font-weight: 600;
+    margin-bottom: 50px;
+    border-bottom:1px solid black ;
+    padding-left: 8px;
+}
+
+.DEX {
+    width: 130px;
+    position: relative;
+    left: 350px;
+    font-size: 23px; 
+    font-weight: 600;
+    margin-bottom: 50px;
+    border-bottom:1px solid black ;
+    padding-left: 8px;
+}
+
+
+.imgap3{
+  width: 400px;
+    height: 450px;
+   margin-right: 100px;
+   margin-top: 50px;
+}
+
+.imgbp3{
+width: 400px;
+    height: 450px;
+     margin-top: 50px;
+}
+
+.paraonep3 {
+    width: 500px;
+}
+
+.videoap3{
+    position: absolute;
+    top:1200px;
+    left:900px;
+    width: 400px;
+    height: auto;
+}
+
+.imgcp3{
+    width: 350px;
+    height: 250px;
+    position:absolute;
+    right: 100px;
+    top: 3000px;
+}
+
+
+/* for basic of web 3 part 4 (p4)  */
+
+.tocp4 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 25px;
+    line-height: 3;
+    padding-right: 50px;
+    border-right:1px solid black;
+}
+
+
+/* for basic of web 3 part 5 (p5)  */
+
+.tocp5 {
+    position: fixed;
+    margin-top: 50px;
+    margin-left: 25px;
+    line-height: 3;
+    padding-right: 50px;
+    border-right:1px solid black;
+}
+
+
+/* for basic of web 3 part 6 (p6)  */
+
+
+/* ========== MOBILE RESPONSIVENESS ========== */
+
+/* Tablet and below (1024px and below) */
+
+@media screen and (max-width: 1024px) {
+    .mainbody {
+        margin-left: 200px;
+        margin-right: 50px;
+    }
+
+    .tocp1, .tocp2, .tocp3, .tocp4, .tocp5 {
+        margin-left: 20px;
+        padding-right: 30px;
+        font-size: 14px;
+        line-height: 2.5;
+    }
+
+    .imgap1 {
+        width: 300px;
+        height: 225px;
+        right: 5%;
+    }
+
+    .imgap1, .imgbp2, .imgcp2, .imgdp2, .imgep2 {
+        left: auto;
+        right: 50px;
+    }
+
+    .imgap3, .imgbp3 {
+        width: 300px;
+        height: 350px;
+    }
+
+    .videoap3 {
+        left: 700px;
+        width: 300px;
+    }
+}
+
+/* Mobile landscape and smaller tablets (768px and below) */
+
+@media screen and (max-width: 768px) {
+    .title H1 {
+        padding-left: 30px;
+        padding-top: 30px;
+        font-size: 16px;
+        padding-bottom: 30px;
+    }
+
+    .title p {
+        font-size: 28px;
+        padding-right: 30px;
+        position: static;
+        text-align: right;
+        padding-bottom: 20px;
+    }
+
+    .mainbody {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+        max-width: 100%;
+    }
+
+    .mainbody H1 {
+        font-size: 26px;
+    }
+
+    .mainbody {
+        font-size: 18px;
+    }
+
+    .tocp1, .tocp2, .tocp3, .tocp4, .tocp5 {
+        position: static;
+        margin: 20px 20px 30px 20px;
+        padding: 15px;
+        border-right: none;
+        border: 1px solid black;
+        border-radius: 5px;
+        background: rgba(255, 255, 255, 0.7);
+        line-height: 2;
+    }
+
+    #paraonep1 {
+        padding-right: 0;
+    }
+
+    .paraonep2, .paratwop2, .parathreep2 {
+        padding-right: 15px;
+    }
+
+    .imgap1 {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .imgap1, .imgbp2, .imgcp2, .imgdp2, .imgep2 {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        left: auto;
+        right: auto;
+        top: auto;
+        bottom: auto;
+    }
+
+    .imgap3, .imgbp3 {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+    }
+
+    .paraonep3 {
+        width: 100%;
+    }
+
+    .videoap3 {
+        position: static;
+        width: 100%;
+        max-width: 400px;
+        margin: 20px auto;
+        display: block;
+        left: auto;
+        top: auto;
+    }
+
+    .imgcp3 {
+        position: static;
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+        margin: 20px auto;
+        display: block;
+        right: auto;
+        top: auto;
+    }
+
+    .cryptowalletguide, .CEX, .DEX {
+        left: 0;
+        margin-left: 15px;
+        width: auto;
+        max-width: 230px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
+
+/* Mobile portrait (480px and below) */
+
+@media screen and (max-width: 480px) {
+    .title H1 {
+        padding-left: 15px;
+        padding-top: 20px;
+        font-size: 14px;
+        padding-bottom: 20px;
+        line-height: 1.6;
+    }
+
+    .title p {
+        font-size: 22px;
+        padding-right: 15px;
+        padding-bottom: 15px;
+    }
+
+    .mainbody {
+        margin-left: 10px;
+        margin-right: 10px;
+        font-size: 16px;
+    }
+
+    .mainbody H1 {
+        font-size: 22px;
+    }
+
+    .paraone, .paratwo, .parathree, .parafour {
+        padding: 15px 0 10px 10px;
+    }
+
+    .tocp1, .tocp2, .tocp3, .tocp4, .tocp5 {
+        margin: 15px 10px 20px 10px;
+        padding: 10px;
+        font-size: 14px;
+        line-height: 1.8;
+    }
+
+    .cryptowalletguide, .CEX, .DEX {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    .wallet-list a {
+        margin-left: 3px;
+        display: inline-block;
+    }
+}

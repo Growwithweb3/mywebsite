@@ -134,3 +134,18 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }, 1500); // Wait for all header animations to complete
 });
+
+
+/* Coming Soon Overlay */
+
+function showComingSoon(event) {
+    event.preventDefault();
+
+    const overlay = document.getElementById("comingSoon");
+    overlay.style.display = "flex";
+
+    setTimeout(() => {
+        overlay.style.display = "none";
+    }, 2000);
+}
+

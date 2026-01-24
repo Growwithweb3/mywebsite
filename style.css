@@ -7,7 +7,7 @@ body {
     height: 100vh; 
     margin: 0;
     padding: 0;
-    background: linear-gradient(90deg, #1b1c1b, #1d1660);
+    background: linear-gradient(90deg, #010538,#000000);
     background-size: cover;
     background-attachment: fixed;
     color: #ffffff; 
@@ -120,32 +120,38 @@ main {
 
 
 .follower-content {
-    max-width: 450px;
+    max-width: 500px;
+    margin-bottom: 50px;
+    word-spacing: 1.5px;
 }
 
 
 .follower-content h2 {
-    font-size: 25px;
+    font-size: 26px;
     color: #00aeff;
     margin-top: 0;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
 }
 
 #paraone {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 50px;
+    font-weight: 500;
 }
 
 #paratwo {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
     margin-bottom: 50px;
+    font-weight: 500;
 }
 
 #parathree {
-    font-size: 18px;
+    font-size: 20px;
     line-height: 1.5;
+    margin-bottom:50;
+    font-weight: 500;
 }
 
 .follower-content a {
@@ -159,14 +165,13 @@ main {
 }
 
 
-
 .box {
     margin-left: auto;
     margin-top: 100px;
 }
 
 .box {
-    background: linear-gradient(135deg, #1f1f1f, #3533cd);  
+    background: rgba(26, 26, 46, 0.6);
     border: 2px solid #fbfbfb;      
     border-radius: 15px;            
     padding: 30px;
@@ -505,7 +510,7 @@ main {
         font-size: 16px;
     }
 
-    /* Footer mobile responsiveness */
+    /* last mobile responsiveness */
     .lastsection {
         padding: 20px 15px;
     }

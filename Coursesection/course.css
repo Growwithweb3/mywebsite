@@ -1,0 +1,730 @@
+/* ADDED: Smooth scrolling for anchor links
+CSS file of basicofweb3.html, advanceofweb3.html and developerroadmap.html
+*/
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    height: 100vh; 
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(90deg, #010538,#000000);
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff; 
+    font-family: Arial, sans-serif;
+    overflow-x: hidden;
+    position: relative;
+    width: 100%;
+    min-width: 100%;
+}
+
+
+/*  _________________________________________________header section_______________________________________________ */
+
+.top-section {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+header {
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+#one {
+    position: relative;
+    left: 2cm;
+    padding-left: 0;
+    font-size: 50px;
+    line-height: 1.5;
+    color: #ffffff; 
+    font-weight: 900; 
+    -webkit-text-stroke: 0.5px #ffffff;
+    text-shadow: 0 0 0.5px #ffffff, 0 0 1px #ffffff;
+    -webkit-text-fill-color: #ffffff;
+    animation: subtleGlow 2s ease-in-out infinite alternate;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+@keyframes subtleGlow {
+    from {
+        text-shadow: 0 0 0.5px #ffffff, 0 0 1px #ffffff;
+    }
+    to {
+        text-shadow: 0 0 0.7px #ffffff, 0 0 1.2px #ffffff;
+    }
+}
+
+#three {
+    position: relative;
+    font-style: italic;
+    font-weight: bold;
+    right: 0.5cm;
+    padding-right: 0;
+    font-size: 20px;
+    line-height: 0.6;
+    text-align: right;
+    color: #ffffff;        
+    opacity: 0;            
+    animation: fadeInLoop 5s ease-in-out infinite alternate;
+    margin: 0;
+    word-wrap: break-word;
+}
+
+@keyframes fadeInLoop {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/*  ________________________________________________main section______________________________________________________ */
+
+main {
+    display: flex;
+    justify-content: space-between;  
+    align-items: flex-start;
+    padding: 50px 50px;
+    flex-wrap: nowrap;               
+}
+
+
+/* ============================================
+   Course Content Section
+   ============================================ */
+
+.course-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+.course-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.course-header h1 {
+    font-size: 42px;
+    color: #f9f9f9;
+    margin-bottom: 15px;
+    text-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+.course-header p {
+    font-size: 18px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.pdf-section {
+    margin-top: 40px;
+}
+
+.pdf-section h2 {
+    font-size: 28px;
+    color: #00aeff;
+    margin-bottom: 25px;
+    border-bottom: 2px solid rgba(0, 255, 255, 0.3);
+    padding-bottom: 10px;
+}
+
+.pdf-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 25px;
+    margin-top: 25px;
+}
+
+.pdf-item {
+    background: linear-gradient(135deg, rgba(31, 31, 31, 0.8), rgba(53, 51, 205, 0.6));
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 25px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    cursor: pointer;
+}
+
+.pdf-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.4);
+    border-color: #00ffff;
+}
+
+.pdf-item h3 {
+    font-size: 20px;
+    color: #00aeff;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.pdf-item h3 i {
+    font-size: 24px;
+}
+
+.pdf-item p {
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.pdf-actions {
+    display: flex;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.pdf-link {
+    display: inline-flex;
+    flex: 1;
+    align-items: center;
+    gap: 8px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 20px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 6px;
+    transition: all 0.3s ease;
+}
+
+.pdf-link:hover {
+    background: rgba(0, 255, 255, 0.2);
+    border-color: #00ffff;
+    color: #00ffff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+}
+
+.pdf-viewer-container {
+    margin-top: 30px;
+    background: rgba(0, 0, 0, 0.3);
+    border: 2px solid rgba(0, 255, 255, 0.3);
+    border-radius: 12px;
+    padding: 20px;
+    min-height: 600px;
+}
+
+.pdf-viewer-container iframe {
+    width: 100%;
+    height: 800px;
+    border: none;
+    border-radius: 8px;
+    background: #ffffff;
+}
+
+/* ============================================
+   X Post Horizontal Banner
+   ============================================ */
+.x-post-banner {
+    margin-top: 40px;
+    background: linear-gradient(90deg, rgba(0, 255, 255, 0.06), rgba(0, 0, 0, 0.5));
+    border-top: 2px solid rgba(0, 255, 255, 0.4);
+    border-bottom: 2px solid rgba(0, 255, 255, 0.4);
+    border-left: 2px solid rgba(0, 255, 255, 0.25);
+    border-right: 2px solid rgba(0, 255, 255, 0.25);
+    border-radius: 6px;
+    padding: 8px 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    box-shadow: none;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+/* Make the banner span the width of three PDF boxes in the grid on large screens */
+.pdf-list .x-post-banner {
+    grid-column: span 3;
+}
+
+.x-post-text {
+    text-align: center;
+}
+
+.x-post-text h3 {
+    margin: 0 0 6px 0;
+    font-size: 20px;
+    color: #00aeff;
+}
+
+.x-post-text p {
+    margin: 0;
+    font-size: 14px;
+    color: #ffffff;
+    opacity: 0.9;
+}
+
+.x-post-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 20px;
+    border-radius: 999px;
+    background: #000000;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 700;
+    border: 1px solid #00ffff;
+    transition: all 0.25s ease;
+    white-space: nowrap;
+}
+
+.x-post-link i {
+    font-size: 18px;
+}
+
+.x-post-link:hover {
+    background: #00ffff;
+    color: #000000;
+    box-shadow: 0 0 18px rgba(0, 255, 255, 0.6);
+    transform: translateY(-2px);
+}
+
+.back-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: 600;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: rgba(0, 255, 255, 0.1);
+    border: 1px solid rgba(0, 255, 255, 0.3);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.back-link:hover {
+    background: rgba(0, 255, 255, 0.2);
+    border-color: #00ffff;
+    text-shadow: 0 0 5px rgba(0, 255, 255, 0.5);
+    transform: translateX(-5px);
+}
+
+
+
+/* ============================================
+   Mobile Responsiveness - Header Section
+   ============================================ */
+
+@media (max-width: 768px) {
+    .top-section {
+        padding: 15px;
+    }
+
+    #one {
+        font-size: 32px;
+        padding-left: 15px;
+        line-height: 1.3;
+        left: 0;
+    }
+
+    #three {
+        font-size: 16px;
+        padding-right: 15px;
+        line-height: 1.3;
+        right: 0;
+        margin-top: 8px;
+    }
+
+    /* Mobile: Stack boxes vertically */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 30px 20px;
+        gap: 30px;
+    }
+
+    .follower-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .box {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .course-container {
+        padding: 30px 15px;
+    }
+
+    .course-header h1 {
+        font-size: 32px;
+    }
+
+    .course-header p {
+        font-size: 16px;
+    }
+
+    .pdf-list {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .pdf-viewer-container iframe {
+        height: 500px;
+    }
+
+    /* Footer mobile responsiveness */
+    .lastsection {
+        padding: 20px 20px;
+    }
+
+    .lastsection .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+    }
+
+    .lastsection .social-links a {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        white-space: normal;
+    }
+
+    #last {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 600px) {
+    .top-section {
+        padding: 12px;
+    }
+
+    #one {
+        font-size: 28px;
+        padding-left: 12px;
+        line-height: 1.2;
+        left: 0;
+    }
+
+    #three {
+        font-size: 14px;
+        padding-right: 12px;
+        line-height: 1.2;
+        right: 0;
+        margin-top: 6px;
+    }
+
+    /* Mobile: Stack boxes vertically */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 25px 15px;
+        gap: 25px;
+    }
+
+    .follower-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .follower-content h2 {
+        font-size: 22px;
+    }
+
+    .follower-content p {
+        font-size: 16px;
+    }
+
+    .box {
+        margin-left: 0;
+        width: 100%;
+        padding: 25px;
+    }
+
+    .box h2 {
+        font-size: 22px;
+    }
+
+    .box p {
+        font-size: 16px;
+    }
+
+    .course-container {
+        padding: 25px 12px;
+    }
+
+    .course-header h1 {
+        font-size: 28px;
+    }
+
+    .pdf-section h2 {
+        font-size: 24px;
+    }
+
+    .pdf-item {
+        padding: 20px;
+    }
+
+    .pdf-item h3 {
+        font-size: 18px;
+    }
+
+    .pdf-viewer-container {
+        padding: 15px;
+    }
+
+    .pdf-viewer-container iframe {
+        height: 400px;
+    }
+
+    /* Footer mobile responsiveness */
+    .lastsection {
+        padding: 20px 15px;
+    }
+
+    .lastsection .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 16px;
+    }
+
+    .lastsection .social-links a {
+        font-size: 16px;
+        display: block;
+        width: 100%;
+        white-space: normal;
+    }
+
+    #last {
+        text-align: left;
+        font-size: 16px;
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .top-section {
+        padding: 10px;
+    }
+
+    #one {
+        font-size: 24px;
+        padding-left: 10px;
+        line-height: 1.2;
+    }
+
+    #three {
+        font-size: 12px;
+        padding-right: 10px;
+        line-height: 1.2;
+    }
+
+    /* Mobile: Stack boxes vertically */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 20px 12px;
+        gap: 20px;
+    }
+
+    .follower-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .follower-content h2 {
+        font-size: 20px;
+    }
+
+    .follower-content p {
+        font-size: 15px;
+    }
+
+    .box {
+        margin-left: 0;
+        width: 100%;
+        padding: 20px;
+    }
+
+    .box h2 {
+        font-size: 20px;
+    }
+
+    .box p {
+        font-size: 15px;
+    }
+
+    .course-container {
+        padding: 20px 10px;
+    }
+
+    .course-header h1 {
+        font-size: 24px;
+    }
+
+    .course-header p {
+        font-size: 14px;
+    }
+
+    .pdf-section h2 {
+        font-size: 20px;
+    }
+
+    .pdf-item {
+        padding: 18px;
+    }
+
+    .pdf-item h3 {
+        font-size: 16px;
+    }
+
+    .pdf-viewer-container iframe {
+        height: 350px;
+    }
+
+    /* Footer mobile responsiveness */
+    .lastsection {
+        padding: 18px 12px;
+    }
+
+    .lastsection .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 15px;
+    }
+
+    .lastsection .social-links a {
+        font-size: 15px;
+        display: block;
+        width: 100%;
+        white-space: normal;
+    }
+
+    #last {
+        text-align: left;
+        font-size: 15px;
+        margin-top: 12px;
+    }
+}
+
+@media (max-width: 360px) {
+    #one {
+        font-size: 20px;
+        padding-left: 8px;
+    }
+
+    #three {
+        font-size: 11px;
+        padding-right: 8px;
+    }
+
+    /* Mobile: Stack boxes vertically */
+    main {
+        flex-direction: column;
+        align-items: stretch;
+        padding: 18px 10px;
+        gap: 18px;
+    }
+
+    .follower-content {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .follower-content h2 {
+        font-size: 18px;
+    }
+
+    .follower-content p {
+        font-size: 14px;
+    }
+
+    .box {
+        margin-left: 0;
+        width: 100%;
+        padding: 18px;
+    }
+
+    .box h2 {
+        font-size: 18px;
+    }
+
+    .box p {
+        font-size: 14px;
+    }
+
+    .course-container {
+        padding: 18px 8px;
+    }
+
+    .course-header h1 {
+        font-size: 20px;
+    }
+
+    .pdf-section h2 {
+        font-size: 18px;
+    }
+
+    .pdf-item h3 {
+        font-size: 14px;
+    }
+
+    .pdf-viewer-container iframe {
+        height: 300px;
+    }
+
+    /* Footer mobile responsiveness */
+    .lastsection {
+        padding: 15px 10px;
+    }
+
+    .lastsection .social-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        font-size: 14px;
+    }
+
+    .lastsection .social-links a {
+        font-size: 14px;
+        display: block;
+        width: 100%;
+        white-space: normal;
+    }
+
+    #last {
+        text-align: left;
+        font-size: 14px;
+        margin-top: 15px;
+    }
+}
+
+
+
