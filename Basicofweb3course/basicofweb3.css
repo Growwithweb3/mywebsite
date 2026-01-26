@@ -77,8 +77,19 @@ margin-bottom: 10px;
     padding: 20px 0 10px 15px;
 }
 
+p{
+    padding: 20px 0 10px 15px;
+}
+
 .section li{
     padding-bottom: 10px;
+}
+
+.note {
+    border-left: 6px solid #2196F3;
+    background-color: #f1f1f1;
+    padding: 10px 15px;
+    margin: 20px 0;
 }
 
 
@@ -102,8 +113,8 @@ margin-bottom: 10px;
     width: 350px;
     height: 250px;
     position: absolute;
-    top: 600px;
-    left: 1100px;
+    top: 620px;
+    right: 180px;
 }
 
 
@@ -119,42 +130,44 @@ margin-bottom: 10px;
     border-right:1px solid black;
 }
 
+.p2 {
+    padding-right:300px;
+}
 .paraonep2, .paratwop2, .parathreep2{
     padding-bottom: 20px;
     padding-left: 15px;
-    padding-right:300px;
 }
 
 .imgap2{
     width: 350px;
     height: 250px;
     position: absolute;
-    top:400px;
-    left: 1100px;
+    top:350px;
+    right: 80px;
 }
 
 .imgbp2{
     width: 300px;
     height: 180px;
     position: absolute;
-    top:850px;
-    left: 1100px;
+    top:1100px;
+    right: 80px;
 }
 
 .imgcp2{
     width: 350px;
     height: 250px;
     position: absolute;
-    top:1100px;
-    left: 1050px;
+    top:1500px;
+    right: 80px;
 }
 
 .imgdp2{
     width: 350px;
     height: 250px;
     position: absolute;
-    bottom:250px;
-    left: 1050px;
+    bottom:350px;
+    right: 80px;
 }
 
 .imgep2{
@@ -162,7 +175,7 @@ margin-bottom: 10px;
     height: 200px;
     position: absolute;
     bottom:0px;
-    left: 1050px;
+    right: 80px;
 }
 
 
@@ -224,14 +237,14 @@ h2 {
 
 .imgap3{
   width: 400px;
-    height: 450px;
+    height: auto;
    margin-right: 100px;
    margin-top: 50px;
 }
 
 .imgbp3{
 width: 400px;
-    height: 450px;
+    height: auto;
      margin-top: 50px;
 }
 
@@ -241,18 +254,32 @@ width: 400px;
 
 .videoap3{
     position: absolute;
-    top:1200px;
+    top:1500px;
     left:900px;
-    width: 400px;
+    width: 500px;
     height: auto;
+}
+
+.parentap3 {
+position: relative;
 }
 
 .imgcp3{
     width: 350px;
     height: 250px;
-    position:absolute;
-    right: 100px;
-    top: 3000px;
+    position: absolute;
+    top: 350px;
+    right: 0px;
+}
+
+.wallet-list a {
+    display: block;       
+    padding: 10px 15px;    
+    border: 1px solid #000; 
+    border-radius: 5px;    
+    text-align: center;   
+    background: #fff;      
+    box-sizing: border-box; 
 }
 
 
@@ -282,11 +309,9 @@ width: 400px;
 
 /* for basic of web 3 part 6 (p6)  */
 
-
 /* ========== MOBILE RESPONSIVENESS ========== */
 
 /* Tablet and below (1024px and below) */
-
 @media screen and (max-width: 1024px) {
     .mainbody {
         margin-left: 200px;
@@ -300,20 +325,25 @@ width: 400px;
         line-height: 2.5;
     }
 
+    /* Images Part 1 */
     .imgap1 {
         width: 300px;
         height: 225px;
-        right: 5%;
-    }
-
-    .imgap1, .imgbp2, .imgcp2, .imgdp2, .imgep2 {
-        left: auto;
         right: 50px;
     }
 
+    /* Images Part 2 */
+    .imgbp2, .imgcp2, .imgdp2, .imgep2 {
+        width: auto;
+        max-width: 300px;
+        height: auto;
+        right: 50px;
+    }
+
+    /* Images Part 3 */
     .imgap3, .imgbp3 {
         width: 300px;
-        height: 350px;
+        height: auto;
     }
 
     .videoap3 {
@@ -323,8 +353,8 @@ width: 400px;
 }
 
 /* Mobile landscape and smaller tablets (768px and below) */
-
 @media screen and (max-width: 768px) {
+    /* Title adjustments */
     .title H1 {
         padding-left: 30px;
         padding-top: 30px;
@@ -335,55 +365,42 @@ width: 400px;
     .title p {
         font-size: 28px;
         padding-right: 30px;
-        position: static;
         text-align: right;
+        position: static;
         padding-bottom: 20px;
     }
 
+    /* Main body adjustments */
     .mainbody {
-        margin-left: 20px;
-        margin-right: 20px;
-        margin-top: 30px;
+        margin: 20px;
         max-width: 100%;
+        font-size: 18px;
     }
 
     .mainbody H1 {
         font-size: 26px;
     }
 
-    .mainbody {
-        font-size: 18px;
-    }
-
+    /* TOC adjustments */
     .tocp1, .tocp2, .tocp3, .tocp4, .tocp5 {
         position: static;
         margin: 20px 20px 30px 20px;
         padding: 15px;
-        border-right: none;
         border: 1px solid black;
         border-radius: 5px;
         background: rgba(255, 255, 255, 0.7);
         line-height: 2;
     }
 
-    #paraonep1 {
-        padding-right: 0;
-    }
-
+    /* Paragraph padding */
     .paraonep2, .paratwop2, .parathreep2 {
         padding-right: 15px;
+        padding-left: 15px;
     }
 
-    .imgap1 {
-        position: static;
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin: 20px auto;
-        display: block;
-    }
-
-    .imgap1, .imgbp2, .imgcp2, .imgdp2, .imgep2 {
+    /* Images adjustments for all parts */
+    .imgap1, .imgbp2, .imgcp2, .imgdp2, .imgep2,
+    .imgap3, .imgbp3, .imgcp3 {
         position: static;
         width: 100%;
         max-width: 350px;
@@ -396,39 +413,16 @@ width: 400px;
         bottom: auto;
     }
 
-    .imgap3, .imgbp3 {
-        width: 100%;
-        max-width: 400px;
-        height: auto;
-        margin: 20px auto;
-        display: block;
-    }
-
-    .paraonep3 {
-        width: 100%;
-    }
-
+    /* Video adjustments */
     .videoap3 {
         position: static;
         width: 100%;
         max-width: 400px;
         margin: 20px auto;
         display: block;
-        left: auto;
-        top: auto;
     }
 
-    .imgcp3 {
-        position: static;
-        width: 100%;
-        max-width: 350px;
-        height: auto;
-        margin: 20px auto;
-        display: block;
-        right: auto;
-        top: auto;
-    }
-
+    /* Guides and sections */
     .cryptowalletguide, .CEX, .DEX {
         left: 0;
         margin-left: 15px;
@@ -436,6 +430,7 @@ width: 400px;
         max-width: 230px;
     }
 
+    /* Headings */
     h2 {
         font-size: 20px;
     }
@@ -444,6 +439,7 @@ width: 400px;
 /* Mobile portrait (480px and below) */
 
 @media screen and (max-width: 480px) {
+    /* Title adjustments */
     .title H1 {
         padding-left: 15px;
         padding-top: 20px;
@@ -458,6 +454,7 @@ width: 400px;
         padding-bottom: 15px;
     }
 
+    /* Main body adjustments */
     .mainbody {
         margin-left: 10px;
         margin-right: 10px;
@@ -472,6 +469,7 @@ width: 400px;
         padding: 15px 0 10px 10px;
     }
 
+    /* TOC adjustments */
     .tocp1, .tocp2, .tocp3, .tocp4, .tocp5 {
         margin: 15px 10px 20px 10px;
         padding: 10px;
@@ -479,17 +477,21 @@ width: 400px;
         line-height: 1.8;
     }
 
+    /* Guides and sections */
     .cryptowalletguide, .CEX, .DEX {
         font-size: 20px;
         margin-left: 10px;
     }
 
+    /* Headings */
     h2 {
         font-size: 18px;
     }
 
+    /* Wallet links */
     .wallet-list a {
         margin-left: 3px;
         display: inline-block;
     }
 }
+
