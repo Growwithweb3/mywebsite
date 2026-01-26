@@ -396,15 +396,27 @@ position: relative;
         box-sizing: border-box;
     }
 
+    /* H1 - BIGGEST and BOLD */
     .mainbody H1 {
-        font-size: 28px;
-        font-weight: 800;
+        font-size: 32px !important;
+        font-weight: 900 !important;
         margin-bottom: 15px;
     }
 
+    /* H2 - BIG and BOLD */
     h2 {
-        font-size: 22px;
-        font-weight: 700;
+        font-size: 26px !important;
+        font-weight: 800 !important;
+    }
+
+    /* Strong tags - BOLD */
+    strong {
+        font-weight: 700 !important;
+    }
+
+    /* List items - LIGHTER */
+    li {
+        font-weight: 500 !important;
     }
 
     /* TOC adjustments */
@@ -561,14 +573,26 @@ position: relative;
         font-size: 16px;
     }
 
+    /* H1 - BIGGEST and BOLD */
     .mainbody H1 {
-        font-size: 24px;
-        font-weight: 800;
+        font-size: 28px !important;
+        font-weight: 900 !important;
     }
 
+    /* H2 - BIG and BOLD */
     h2 {
-        font-size: 20px;
-        font-weight: 700;
+        font-size: 24px !important;
+        font-weight: 800 !important;
+    }
+
+    /* Strong tags - BOLD */
+    strong {
+        font-weight: 700 !important;
+    }
+
+    /* List items - LIGHTER */
+    li {
+        font-weight: 500 !important;
     }
 
     /* Paragraph styling */
